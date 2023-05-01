@@ -1,0 +1,40 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #F6F8FC;
+}
+
+
+
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  
+}
+
+@media screen and (min-width: 992px){
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+
+  #pokemonList{
+    margin: 0 auto;
+  }
+}
+
+.content h1{
+  margin: 0;
+  font-size: 3.2rem;
+  margin: 1rem 2rem;
+}
+
