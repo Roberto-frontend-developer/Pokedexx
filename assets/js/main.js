@@ -1,10 +1,17 @@
 const pokemoList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
+const btnFilter = document.querySelector('.icon-filter')
 
 const maxrecord = 151
 const limit = 10
 let offset = 0
 
+
+btnFilter.addEventListener('click', () => {
+  const containerFilter =document.querySelector('.container-filters')
+
+  containerFilter.classList.toggle('active')
+})
 
 function loadPokemonItens(offset, limit){
   pokeApi.getPokemons(offset, limit).then((pokmemons = []) => {
